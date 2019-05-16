@@ -19,7 +19,7 @@ function! OpenNerdTree()
         exec "normal! \<c-w>\<c-w>"
     endif
 endfunction
-autocmd VimEnter * call OpenNerdTree()
+"autocmd VimEnter * call OpenNerdTree()
 
 
 " nerdtree window resize
@@ -230,6 +230,11 @@ let g:used_javascript_libs = 'jquery,underscore,requirejs,chai,handlebars,d3,tap
 " [> JSON <]
 
 let g:vim_json_syntax_conceal = 0
+
+" [> vim-show-whitespace <]
+" Set whitespace color
+let g:showwhite_highlighting = 'ctermfg=DarkGrey ctermbg=NONE'
+autocmd VimEnter * :call showwhite#Init()
 
 
 " [> YCM shortcuts <]
