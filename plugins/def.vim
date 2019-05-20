@@ -37,9 +37,9 @@ Plug 'moll/vim-node',                             { 'commit' : 'ede047791792b953
 Plug 'syngan/vim-vimlint',                        { 'commit' : 'c8b9cd9d8a0fb6dc69667d32819aeef503cff55c'}
 Plug 'ynkdir/vim-vimlparser',                     { 'commit' : '2fff43c58968a18bc01bc8304df68bde01af04d9'}
 Plug 'mattn/emmet-vim',                           { 'commit' : 'd698f1658770ca5fa58c87e80421c8d65bbe9065'}
-Plug '~/.vim/plugins/plugged/taglist'
-Plug '~/.vim/plugins/plugged/vc.vim'
-Plug '~/.vim/plugins/plugged/vim-show-whitespace'
+Plug 'vim-scripts/taglist.vim',                       { 'commit': 'master' }
+Plug 'juneedahamed/vc.vim',                       { 'branch': 'master'}
+Plug 'chrisbra/vim-show-whitespace',              { 'branch': 'master' }
 Plug 'chase/vim-ansible-yaml',                    { 'branch': 'master' }
 Plug 'prettier/vim-prettier',                     { 'do': 'npm install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
 Plug 'fatih/vim-go',                              { 'do': ':GoUpdateBinaries' }
