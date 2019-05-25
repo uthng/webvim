@@ -110,3 +110,6 @@ let NERDTreeDirArrows = 1
 " vim-go
 " Disable warning about old version vim
 let g:go_version_warning = 0
+
+" Add for clipboard on Macos
+set clipboard+=unnamed
