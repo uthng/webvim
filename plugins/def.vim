@@ -46,5 +46,6 @@ Plug 'fatih/vim-go',                              { 'do': ':GoUpdateBinaries' }
 Plug 'SirVer/ultisnips'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'goatslacker/mango.vim',                  { 'branch': 'master' }
+Plug 'jistr/vim-nerdtree-tabs',                 { 'branch': 'master' }
 
 call plug#end()
