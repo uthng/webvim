@@ -9,8 +9,9 @@ endfunction
 " Start plugins definition
 call plug#begin($HOME.'/.vim/plugins/plugged')
 
-Plug 'scrooloose/nerdtree', { 'commit' : '84737f2ebe533ffac9ebc21da8d1f57216962641' } | Plug 'https://gist.github.com/1f40e70e615f2fa2212bf5423662277d.git', { 'dir' : g:vimDir . '/nerdtree_plugin' } | Plug 'Xuyuanp/nerdtree-git-plugin', { 'commit' : '325a1298b0c9d8a4c61388a2f9956a534a9068cd' } | Plug 'MarSoft/nerdtree-grep-plugin', { 'commit' : '09e446ebe4770687a6283905d5ff461ea268bc14' }
-
+"Plug 'scrooloose/nerdtree', { 'commit' : '84737f2ebe533ffac9ebc21da8d1f57216962641' } | Plug 'https://gist.github.com/1f40e70e615f2fa2212bf5423662277d.git', { 'dir' : g:vimDir . '/nerdtree_plugin' } | Plug 'Xuyuanp/nerdtree-git-plugin', { 'commit' : '325a1298b0c9d8a4c61388a2f9956a534a9068cd' } | Plug 'MarSoft/nerdtree-grep-plugin', { 'commit' : '09e446ebe4770687a6283905d5ff461ea268bc14' }
+Plug 'scrooloose/nerdtree',                       { 'branch' : 'master' }
+Plug 'Xuyuanp/nerdtree-git-plugin',               { 'branch' : 'master' }
 Plug 'scrooloose/nerdcommenter',                  { 'commit' : '9a32fd2534427f7a1dcfe22e9c0ea6b67b6dbe78' }
 Plug 'NLKNguyen/papercolor-theme',                { 'commit' : 'c4a4dfdc21c14f58c12d077242ae33b729c894b2' }
 Plug 'bling/vim-airline',                         { 'commit' : '1c3ae6077af76927f82f87e05a7b9fdfba47ce2c', 'do' : $HOME.'/.vim/fonts/install' }
@@ -44,6 +45,10 @@ Plug 'chase/vim-ansible-yaml',                    { 'branch': 'master' }
 Plug 'prettier/vim-prettier',                     { 'do': 'npm install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
 Plug 'fatih/vim-go',                              { 'do': ':GoUpdateBinaries' }
 Plug 'SirVer/ultisnips'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'goatslacker/mango.vim',                  { 'branch': 'master' }
 Plug 'jistr/vim-nerdtree-tabs',                 { 'branch': 'master' }
