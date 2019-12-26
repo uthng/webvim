@@ -85,7 +85,12 @@ map <S-c> :close
 map <S-q> :q!<cr>
 map <tab> >><Esc>
 map <S-tab> <<<Esc>
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
+" NERDTREE
+map <Leader>n :NERDTreeToggle<CR>
+" NERDTREETABS
+map <Leader>nt <plug>NERDTreeTabsToggle<CR>
+map <Leader>nf <plug>NERDTreeTabsFind<CR>
 
 " Toggle line number
 "nmap <C-N><C-N> :set invnumber<CR>
