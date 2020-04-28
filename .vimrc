@@ -113,6 +113,9 @@ let g:go_version_warning = 0
 " Add for clipboard on Macos
 set clipboard+=unnamed
 
+" -------------------------------------------------------------------------------------------------
+" FZF settings
+" -------------------------------------------------------------------------------------------------
 "FZF Bang commands
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--inline-info']}), <bang>0)
@@ -137,6 +140,10 @@ command! -bang -nargs=* GGrep
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
+
+" -------------------------------------------------------------------------------------------------
+" vim-go settings
+" -------------------------------------------------------------------------------------------------
 " Disable these options for vim-go
 "let g:go_highlight_structs = 1
 "let g:go_highlight_interfaces = 1
@@ -146,3 +153,16 @@ command! -bang -nargs=* GGrep
 "let g:go_metalinter_autosave = 1
 "let g:go_metalinter_autosave_enabled = ['govet', 'golint', 'errcheck', 'gofmt']
 "let g:go_metalinter_autosave_enabled = ['deadcode', 'errcheck', 'gosimple', 'govet', 'staticcheck', 'typecheck', 'unused', 'varcheck']
+
+let g:go_def_mapping_enabled = 0
+
+" -------------------------------------------------------------------------------------------------
+" vim-go settings
+" -------------------------------------------------------------------------------------------------
+let g:lsc_auto_map = v:true
+
+" -------------------------------------------------------------------------------------------------
+" dart-vim- settings
+" -------------------------------------------------------------------------------------------------
+let g:dart_style_guide = 2
+let g:dart_format_on_save = 1
