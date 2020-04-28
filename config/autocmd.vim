@@ -23,4 +23,4 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 autocmd BufRead,BufNewFile *.{yml,yaml} set filetype=ansible.yaml expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.vue set filetype=html.css expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
-autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=8 shiftwidth=8 softtabstop=8

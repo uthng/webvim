@@ -24,7 +24,12 @@ nnoremap <S-t> :tabe
 nnoremap <leader>co :copen<CR>:set modifiable<CR>
 nnoremap <leader>cn :cn<CR>
 nnoremap <leader>cp :cp<CR>
-"nnoremap <leader>cc :cclose<CR>
+nnoremap <leader>cq :cclose<CR>
+
+" FZF mapping commands
+" Windows & Tab list
+nnoremap <leader>W :Window<CR>
+nnoremap <leader>F :Files<CR>
 
 " insert mode uppercase the current word
 "  <esc> : go to normal mode

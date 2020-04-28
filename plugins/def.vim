@@ -42,7 +42,7 @@ Plug 'vim-scripts/taglist.vim',                       { 'commit': 'master' }
 Plug 'juneedahamed/vc.vim',                       { 'branch': 'master'}
 Plug 'chrisbra/vim-show-whitespace',              { 'branch': 'master' }
 Plug 'chase/vim-ansible-yaml',                    { 'branch': 'master' }
-Plug 'prettier/vim-prettier',                     { 'do': 'npm install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
+Plug 'prettier/vim-prettier',                     { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'fatih/vim-go',                              { 'do': ':GoUpdateBinaries' }
 Plug 'SirVer/ultisnips'
 Plug 'AndrewRadev/splitjoin.vim'
