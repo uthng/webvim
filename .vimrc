@@ -166,3 +166,11 @@ let g:lsc_auto_map = v:true
 " -------------------------------------------------------------------------------------------------
 let g:dart_style_guide = 2
 let g:dart_format_on_save = 1
+
+" -------------------------------------------------------------------------------------------------
+" UltiSnips settings (commented below settings because we use finally
+" coc-ultisnips & coc-snippets to handle the ones)
+" -------------------------------------------------------------------------------------------------
+"let g:UltiSnipsSnippetsDir="/data/Projets/vim-snippets"
+"let g:UltiSnipsSnippetDirectories=["/data/Projets/vim-snippets/UltiSnips"]
+"let g:UltiSnipsListSnippets  = "<c-l>" "List possible snippets based on current file
