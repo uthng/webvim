@@ -20,11 +20,39 @@ nnoremap <S-left> :tabp<CR>
 nnoremap <S-s> :tabs<CR>
 nnoremap <S-t> :tabe
 
+" Handle  buffer switch
+nnoremap <S-up> :bp<CR>
+nnoremap <S-down> :bn<CR>
+nnoremap <S-b> :ls<CR>
+nnoremap <S-e> :e
+
 " Quickfix
 nnoremap <leader>co :copen<CR>:set modifiable<CR>
 nnoremap <leader>cn :cn<CR>
 nnoremap <leader>cp :cp<CR>
 nnoremap <leader>cq :cclose<CR>
+
+" Handle windows
+" Maximize & minimize current windows
+nnoremap <Space><up> <C-W>\|<C-W>_
+nnoremap <Space><down> <C-W>=
+nnoremap <C-W>M <C-W>\|<C-W>_
+nnoremap <C-W>m <C-W>=
+
+" set moving between windows to ctrl+arrows
+nnoremap <silent> <C-S-Right> <c-w>l
+nnoremap <silent> <C-S-Left> <c-w>h
+nnoremap <silent> <C-S-Up> <c-w>k
+nnoremap <silent> <C-S-Down> <c-w>j
+nnoremap <silent> <C-S-u> <c-w>s
+nnoremap <silent> <C-S-v> <c-w>v
+nnoremap <silent> <C-S-c> <c-w>c
+
+" set moving between windows to ctrl+hjkl
+noremap <silent> <C-l> <c-w>l
+noremap <silent> <C-h> <c-w>h
+noremap <silent> <C-k> <c-w>k
+noremap <silent> <C-j> <c-w>j
 
 " FZF mapping commands
 " Windows & Tab list
@@ -40,7 +68,7 @@ nnoremap <leader>F :Files<CR>
 inoremap <c-u> <esc>viwUi
 
 " remove last search highlight
-nnoremap <C-l> :nohlsearch<CR><C-l>
+nnoremap <Space>l :nohlsearch<CR><C-l>
 
 " Wrap a word in double quotes
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
@@ -67,7 +95,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <silent> <s-l> :TlistToggle<CR>
 
 " Toggle mouse
-nnoremap <s-m> :call ToggleMouse()<CR>
+nnoremap <leader>mo :call ToggleMouse()<CR>
 function! ToggleMouse()
   if &mouse == 'a'
     set mouse=
