@@ -11,5 +11,9 @@
   "snippets.ultisnips.directories":[
     "UltiSnips",
     "/data/Projets/vim-snippets/UltiSnips"
-  ]
+  ],
+  "yaml.schemas": {
+      "kubernetes": "/*.yaml",
+      "http://json.schemastore.org/ansible-stable-2.9": "/*.[yaml|yml]"
+  }
 }
