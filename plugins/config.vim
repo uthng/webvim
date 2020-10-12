@@ -59,7 +59,7 @@ endfunction
 autocmd BufEnter * call CheckLeftBuffers()
 
 " git indicator in tree
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
